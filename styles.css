@@ -1,0 +1,190 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+    transition: background 0.5s ease-in-out;
+}
+
+header {
+    background: linear-gradient(135deg, #333, #444);
+    color: #fff;
+    padding: 20px 0;
+    transition: background 0.5s ease-in-out;
+}
+.logo img {
+    height: 20px; /* Adjust the size as needed */
+    border-radius: 50%;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff4081;
+}
+
+
+#intro {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9));
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: background 0.5s ease-in-out;
+}
+
+#intro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.5s ease-in-out;
+}
+
+#intro img:hover {
+    transform: scale(1.1);
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 0.9));
+    max-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: background 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+section:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(240, 240, 240, 1));
+    transform: translateY(-10px);
+}
+
+h2 {
+    color: #444;
+    font-size: 2em;
+    margin-bottom: 20px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #ff4081;
+    margin-top: 10px;
+    transition: width 0.3s ease-in-out;
+}
+
+h2:hover::after {
+    width: 100px;
+}
+
+.project, .job, .education {
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover, .job:hover, .education:hover {
+    transform: translateX(10px);
+}
+
+.project h3, .job h4, .education h4 {
+    margin: 10px 0;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+}
+
+.project h3:hover, .job h4:hover, .education h4:hover {
+    color: #ff4081;
+}
+
+button, .social-media a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #fff;
+    background: linear-gradient(135deg, #333, #444);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover, .social-media a:hover {
+    background: linear-gradient(135deg, #ff4081, #ff5581);
+    transform: scale(1.05);
+}
+
+.social-media a {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #ff4081;
+}
+
+.scroll-element {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-element.scrolled {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+
+
